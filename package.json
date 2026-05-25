@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "sisi-interior",
   "version": "0.0.0",
   "private": true,
@@ -20,5 +21,9 @@
   },
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
+=======
+  "dependencies": {
+    "react-router-dom": "^7.14.0"
+>>>>>>> 9ccbe06ab5359ca3a92e5a28e9e29dc6588aa350
   }
 }
