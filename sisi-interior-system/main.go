@@ -1,6 +1,7 @@
 package main
 
 import (
+	"os"
 	"sisi-interior-system/config"
 	"sisi-interior-system/routes"
 
@@ -28,5 +29,11 @@ func main() {
 	routes.SetupRoutes(r)
 
 	//Run pada port 8081
-	r.Run(":8081")
+	port := os.Getenv("PORT")
+
+	if port == "" {
+		port = "8080"
+	}
+
+	r.Run(":" + port)
 }

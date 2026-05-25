@@ -2,6 +2,7 @@ package config
 
 import (
 	"log"
+	"os"
 	"sisi-interior-system/models"
 
 	"gorm.io/driver/postgres"
@@ -12,7 +13,7 @@ var DB *gorm.DB
 
 func ConnectDB() {
 
-	dsn := "host=localhost user=postgres password=123 dbname=sisiinterior port=5433 sslmode=disable"
+	dsn := os.Getenv("DATABASE_URL")
 
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {

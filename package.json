@@ -1,8 +1,7 @@
 {
-<<<<<<< HEAD
-  "name": "sisi-interior",
-  "version": "0.0.0",
+  "name": "sisi-interior-main",
   "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,20 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^1.15.0",
-    "vue": "^3.5.31",
-    "vue-router": "^5.0.4"
+    "axios": "^1.7.2",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^6.0.5",
-    "vite": "^8.0.3",
-    "vite-plugin-vue-devtools": "^8.1.1"
-  },
-  "engines": {
-    "node": "^20.19.0 || >=22.12.0"
-=======
-  "dependencies": {
-    "react-router-dom": "^7.14.0"
->>>>>>> 9ccbe06ab5359ca3a92e5a28e9e29dc6588aa350
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.2.0",
+    "vite-plugin-vue-devtools": "^8.1.2"
   }
 }
