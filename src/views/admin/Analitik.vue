@@ -210,7 +210,7 @@ import { useRouter } from 'vue-router'
 import axios from 'axios'
 import AdminAccountMenu from '@/components/AdminAccountMenu.vue'
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8081/api'
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://rent-installation-utc-remedy.trycloudflare.com/api'
 
 const searchQuery = ref('')
 const chartPeriod = ref('this_month')

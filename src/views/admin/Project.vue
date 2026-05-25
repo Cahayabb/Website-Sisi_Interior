@@ -356,7 +356,7 @@ const getProjects = async () => {
   loading.value = true
   errorMsg.value = ''
 try {
-    const res = await fetch("http://localhost:8081/api/admin/projects", {
+    const res = await fetch("https://rent-installation-utc-remedy.trycloudflare.com/api/admin/projects", {
       method: "GET",
       headers: {
         "Authorization": `Bearer ${token}`
@@ -465,7 +465,7 @@ const handleUpload = async () => {
       tanggal: new Date().toISOString()
     }
 
-    const res = await fetch("http://localhost:8081/api/admin/projects", {
+    const res = await fetch("https://rent-installation-utc-remedy.trycloudflare.com/api/admin/projects", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -494,7 +494,7 @@ const editItem   = (item) => { form.value = { ...item, daftarItem: [...(item.daf
 
 const deleteItem = async (id) => {
 try {
-    await fetch(`http://localhost:8081/api/admin/projects/${id}`, {
+    await fetch(`https://rent-installation-utc-remedy.trycloudflare.com/api/admin/projects/${id}`, {
       method: "DELETE",
       headers: {
         "Authorization": `Bearer ${token}`

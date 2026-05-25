@@ -351,7 +351,7 @@ import axios from 'axios'
 import AdminAccountMenu from '@/components/AdminAccountMenu.vue'
 
 const router        = useRouter()
-const API_BASE_URL  = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8081/api'
+const API_BASE_URL  = import.meta.env.VITE_API_BASE_URL || 'https://rent-installation-utc-remedy.trycloudflare.com/api'
 const menuOpen      = ref(false)
 const showProfile   = ref(false)
 const avatarMenuRef = ref(null)
@@ -713,7 +713,7 @@ const initDashboard = async () => {
     const token = localStorage.getItem('token')
 
     const response = await axios.get(
-      'http://localhost:8081/api/admin/dashboard',
+      'https://rent-installation-utc-remedy.trycloudflare.com/api/admin/dashboard',
       {
         headers: {
           Authorization: `Bearer ${token}`

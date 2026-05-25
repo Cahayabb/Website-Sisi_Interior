@@ -217,7 +217,7 @@ import AdminAccountMenu from '@/components/AdminAccountMenu.vue'
 // API CONFIG 
 // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const ML_URL = import.meta.env.VITE_ML_BASE_URL || 'http://127.0.0.1:5000'
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8081/api'
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://rent-installation-utc-remedy.trycloudflare.com/api'
 const router = useRouter()
 
 

@@ -301,7 +301,7 @@ const userInitials = computed(() => {
 // ─────────────────────────────────────────
 // API HELPERS 
 // ─────────────────────────────────────────
-const BASE_URL = 'http://localhost:8081/api'
+const BASE_URL = 'https://rent-installation-utc-remedy.trycloudflare.com/api'
 
 const getHeaders = () => ({
   'Content-Type': 'application/json',

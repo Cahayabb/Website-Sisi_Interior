@@ -389,7 +389,7 @@ const handleSimpan = async () => {
   isSaving.value = true
   try {
     const token = localStorage.getItem('token')
-    const res = await fetch('http://localhost:8081/api/users/estimasi',{
+    const res = await fetch('https://rent-installation-utc-remedy.trycloudflare.com/api',{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

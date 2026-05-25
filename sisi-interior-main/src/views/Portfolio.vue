@@ -99,7 +99,7 @@
             :key="item_id"
           >
           <img 
-            :src="`http://localhost:8081/uploads/${item.gambar}`" 
+            :src="`https://rent-installation-utc-remedy.trycloudflare.com/api/uploads/${item.gambar}`" 
             :alt="item.judul_proyek" 
           />
 
@@ -122,7 +122,7 @@ const portfolios = ref([])
 
 const getPortfolios = async () => {
   try {
-    const res = await fetch("http://localhost:8081/api/portfolios")
+    const res = await fetch("https://rent-installation-utc-remedy.trycloudflare.com/api/portfolios")
     const data = await res.json()
 
     portfolios.value = data.data

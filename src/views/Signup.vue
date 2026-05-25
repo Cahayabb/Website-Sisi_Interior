@@ -224,7 +224,7 @@ const handleSignUp = async () => {
 
   isLoading.value = true
   try {
-    const res = await fetch('http://localhost:8081/api/register' ,{
+    const res = await fetch('https://rent-installation-utc-remedy.trycloudflare.com/api/register' ,{
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

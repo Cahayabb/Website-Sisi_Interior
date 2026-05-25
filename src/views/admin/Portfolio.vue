@@ -259,7 +259,7 @@ const portfolioItems = ref([])
 // ================= GET DATA =================
 const getPortfolios = async () => {
   try {
-    const res = await fetch("http://localhost:8081/api/portfolios")
+    const res = await fetch("https://rent-installation-utc-remedy.trycloudflare.com/api/portfolios")
     const data = await res.json()
     portfolioItems.value = data.data
   } catch (err) {
@@ -299,7 +299,7 @@ const openForm = (item) => {
     formData.deskripsi = item.deskripsi
 
     // preview dari backend
-    imagePreview.value   = `http://localhost:8081/uploads/${item.gambar}`
+    imagePreview.value   = `https://rent-installation-utc-remedy.trycloudflare.com/uploads/${item.gambar}`
   } else {
     editingId.value      = null
     formData.judul_proyek       = ''
@@ -364,8 +364,8 @@ try {
       form.append("gambar", formData.gambar)
     }
       const url = editingId.value
-          ? `http://localhost:8081/api/admin/portfolios/${editingId.value}`
-          : `http://localhost:8081/api/admin/portfolios`
+          ? `https://rent-installation-utc-remedy.trycloudflare.com/api/admin/portfolios/${editingId.value}`
+          : `https://rent-installation-utc-remedy.trycloudflare.com/api/admin/portfolios`
 
     const method = editingId.value ? "PUT" : "POST"
 
@@ -397,7 +397,7 @@ const deleteItem = async (id) => {
 
   try {
     const token = localStorage.getItem('token')
-    await fetch(`http://localhost:8081/api/admin/portfolios/${id}`, {
+    await fetch(`https://rent-installation-utc-remedy.trycloudflare.com/api/admin/portfolios/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`
@@ -449,7 +449,7 @@ const removeImage = () => {
 
 const getImageUrl = (gambar) => {
   if (!gambar) return ''
-  return `http://localhost:8081/uploads/${gambar}`
+  return `https://rent-installation-utc-remedy.trycloudflare.com/uploads/${gambar}`
 }
 
 // ================= LOAD AWAL =================
