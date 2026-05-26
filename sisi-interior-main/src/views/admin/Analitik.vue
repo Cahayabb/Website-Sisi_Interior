@@ -122,7 +122,7 @@ import { ref, onMounted, onUnmounted, watch } from 'vue'
 // ─────────────────────────────────────────────
 // API CONFIG — ganti BASE_URL ke endpoint Golang
 // ─────────────────────────────────────────────
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080/api'
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://rent-installation-utc-remedy.trycloudflare.com/api'
 
 // TODO: uncomment saat backend Golang siap
 // const fetchStats          = () => fetch(`${API_BASE_URL}/analitik/stats`).then(r => r.json())

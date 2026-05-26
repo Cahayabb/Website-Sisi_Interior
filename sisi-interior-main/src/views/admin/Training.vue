@@ -211,7 +211,7 @@ import { ref } from 'vue'
 // ─────────────────────────────────────────────
 // API CONFIG 
 // ─────────────────────────────────────────────
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080/api'
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://rent-installation-utc-remedy.trycloudflare.com/api'
 
 // const fetchRingkasan    = () => fetch(`${API_BASE_URL}/training/ringkasan`).then(r => r.json())
 // const fetchRiwayat      = () => fetch(`${API_BASE_URL}/training/riwayat`).then(r => r.json())
