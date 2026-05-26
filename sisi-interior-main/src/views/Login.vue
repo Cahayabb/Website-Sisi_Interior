@@ -167,7 +167,7 @@ const handleLogin = async () => {
     }
 
     // simpan session
-    localStorage.setItem('token', '123')
+    localStorage.setItem('token', res.data.token)
     localStorage.setItem('role', user.role)
     localStorage.setItem('username', user.username)
 
